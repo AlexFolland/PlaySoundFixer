@@ -1,6 +1,5 @@
 ## Interface: 70300
 ## Title: PlaySoundFixer
 ## Notes: Traces the source of broken PlaySound calls so you can fix them
-## Author: Alex Folland
+## Author: Alex Folland, Erorus
 PlaySoundFixer.lua
-## SavedVariables: PlaySoundFixerDB
