@@ -14,7 +14,7 @@ PlaySound = function(sound, ...)
         converted = converted .. c:upper()
     end
 
-    local patterns = {"\n", "^.-AddOns%\\", ": in function.*$"}
+    local patterns = {"\n", "^.-AddOns\\", ": in function.*$"}
     local source = debugstack(2,1,0)
     for i = 1, #patterns do source = gsub(source, patterns[i], "") end
     print("PSF: broken PlaySound(\""..soundstring.."\") called from "..source..(SOUNDKIT[converted] and " and converted to ".."PlaySound(SOUNDKIT["..converted.."]) for playback" or ""))
